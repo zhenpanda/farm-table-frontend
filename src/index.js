@@ -8,6 +8,7 @@ import reduxThunk from 'redux-thunk';
 import registerServiceWorker from './registerServiceWorker';
 
 import './css/style.css';
+import './css/materialize/css/materialize.min.css';
 
 // composed components
 import ReuiredAuth from './components/Require_authentication'
@@ -32,7 +33,7 @@ ReactDOM.render(
       </Route>
     </Router>
   </Provider>
-  ,document.querySelector('.container')
+  ,document.querySelector('.app')
 );
 
 registerServiceWorker();

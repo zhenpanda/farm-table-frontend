@@ -1,25 +1,42 @@
-body{
-  background-color: black;
-}
-.App {}
-
 @font-face {
   font-family: 'MyFont';
   src: local('MyFont'), url(./dawnland.meep-light2014.ttf);
 }
-.splash-name {
-  font-family: 'MyFont';
+.splash {
+  height: 400px;
+}
+.header {
+  height: 40px;
+  background-color: black;
+}
+.splah-text {
   z-index: 10;
   position: absolute;
-  font-size: 5em;
-  margin-left: 100px;
-  color: white;
+  margin-top: 100px;
 }
-
+.splash-name {
+  font-family: 'MyFont';
+  font-size: 10em;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  margin-left: 100px;
+}
+.splash-title {
+  font-family: 'MyFont';
+  font-size: 2em;
+  color: white;
+  text-shadow: 1px 1px 1px #000000;
+  margin-left: 100px;
+}
 .background-video {
-  background-color: black;
   height: 100%;
   width: 100%;
   float: left;
   padding: none;
+  background-color: #424242;
+}
+
+.home {
+  background-color: grey;
+  height: 300px;
 }
