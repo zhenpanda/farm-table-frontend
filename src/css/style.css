@@ -1,0 +1,25 @@
+body{
+  background-color: black;
+}
+.App {}
+
+@font-face {
+  font-family: 'MyFont';
+  src: local('MyFont'), url(./dawnland.meep-light2014.ttf);
+}
+.splash-name {
+  font-family: 'MyFont';
+  z-index: 10;
+  position: absolute;
+  font-size: 5em;
+  margin-left: 100px;
+  color: white;
+}
+
+.background-video {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  float: left;
+  padding: none;
+}
