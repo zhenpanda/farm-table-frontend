@@ -1,2 +1,1 @@
-# farm-table-frontend
-frontend hackathon for farm table app
+# frontend hackathon for farm table app
