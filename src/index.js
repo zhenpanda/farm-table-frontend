@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
 import {createStore, applyMiddleware} from 'redux'
-import {Router,Route,browserHistory} from 'react-router';
+import {IndexRoute,Router,Route,browserHistory} from 'react-router';
 import reduxThunk from 'redux-thunk';
 
 import registerServiceWorker from './registerServiceWorker';
@@ -12,8 +12,10 @@ import './css/materialize/css/materialize.min.css';
 
 // composed components
 import ReuiredAuth from './components/Require_authentication'
+
 // basic components
 import App from './components/App';
+import Home from './components/Home';
 import Resources from './components/Resources';
 // import Async from './middlewares/async'
 
@@ -28,10 +30,11 @@ const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
     <Router history={browserHistory}>
-      <Route path="/" component={App}>
-        <Route path="/resources" component={ReuiredAuth(Resources)} />
-      </Route>
-    </Router>
+    <Route path="/" component={App}>
+      <IndexRoute component={Home} />
+      <Route path="resources" component={Resources} />
+    </Route>
+  </Router>
   </Provider>
   ,document.querySelector('.app')
 );

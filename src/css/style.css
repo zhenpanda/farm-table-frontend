@@ -3,11 +3,10 @@
   src: local('MyFont'), url(./dawnland.meep-light2014.ttf);
 }
 .splash {
-  height: 400px;
 }
 .header {
-  height: 40px;
-  background-color: black;
+  /*height: 40px;*/
+  background-color: white;
 }
 .splah-text {
   z-index: 10;
@@ -33,10 +32,21 @@
   width: 100%;
   float: left;
   padding: none;
-  background-color: #424242;
 }
 
-.home {
-  background-color: grey;
-  height: 300px;
+.portal {
+  background-color: #4e342e;
+  padding-bottom: 30px;
+}
+.portal-text {
+  margin-top: 20px;
+  color: white;
+}
+.tour-details {
+  margin-top: 20px;
+  color: #66bb6a;
+}
+.host-details {
+  margin-top: 20px;
+  color: #ffb300;
 }
