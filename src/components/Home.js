@@ -78,7 +78,7 @@ class Home extends Component {
                   </div>
                   <div className="modal-footer">
                     <Link to="farm">
-                      <a className="modal-action modal-close waves-effect waves-green btn-flat">Sumbit</a>
+                      <a className="modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
                     </Link>
                   </div>
                 </div>
@@ -91,7 +91,7 @@ class Home extends Component {
 
                   </div>
                   <div className="modal-footer">
-                    <a href="" className="modal-action modal-close waves-effect waves-green btn-flat">Sumbit</a>
+                    <a href="" className="modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
                   </div>
                 </div>
               </div>
