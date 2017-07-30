@@ -160,6 +160,10 @@
   float: right;
 }
 
+.card {
+  line-height: 1.5em;
+}
+
 #machine-learning-area {
   height: 300px;
 }
