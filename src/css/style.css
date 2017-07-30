@@ -18,7 +18,7 @@
   font-size: 10em;
   color: white;
   text-shadow: 2px 2px 4px #000000;
-  margin-left: 100px;
+  margin-left: 50px;
 }
 .splash-title {
   font-family: 'MyFont';
@@ -159,4 +159,11 @@
 }
 .complete-text{
   margin-left: 88px;
+}
+.expander{
+  float: right;
+}
+
+#machine-learning-area {
+  height: 300px;
 }
