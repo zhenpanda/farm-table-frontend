@@ -82,44 +82,6 @@ class Farm extends Component {
          <div className="col s2" />
        </div>
 
-       <div className="row">
-        <div className="col s2" />
-         <div className="col s8 center-align">
-           <table>
-             <thead>
-               <tr>
-                   <th>Example Tour Details</th>
-                   <th></th>
-                   <th></th>
-               </tr>
-             </thead>
-             <tbody>
-               <tr>
-                 <td><i className="fa fa-circle example-tour-top-text" aria-hidden="true"></i>Average Tour Size: 4 people</td>
-               </tr>
-               <tr>
-                 <td><i className="fa fa-circle example-tour-top-text" aria-hidden="true"></i>Average Tour Cost per person: $85</td>
-               </tr>
-               <tr>
-                <td><i className="fa fa-circle example-tour-top-text" aria-hidden="true"></i>Schedule Concept:</td>
-               </tr>
-               <tr>
-                <td className="example-tour-text"><i className="fa fa-caret-right example-tour-bot-text" aria-hidden="true"></i>Meet & Greet: 15 - 30 minutes</td>
-               </tr>
-               <tr>
-                <td className="example-tour-text"><i className="fa fa-caret-right example-tour-bot-text" aria-hidden="true"></i>Tour / Pick / Pet: 60 -  90 minutes</td>
-               </tr>
-               <tr>
-                <td className="example-tour-text"><i className="fa fa-caret-right example-tour-bot-text" aria-hidden="true"></i>Enjoy a Meal: 60 - 90 minutes</td>
-               </tr>
-               <tr>
-                <td className="example-tour-text"><i className="fa fa-caret-right example-tour-bot-text" aria-hidden="true"></i>Total Time: 2hrs 15 minutes - 3hrs 30 minutes</td>
-               </tr>
-             </tbody>
-           </table>
-          </div>
-          <div className="col s2" />
-        </div>
 
         <div className="parallax-container">
           <div className="parallax">

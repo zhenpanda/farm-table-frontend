@@ -59,9 +59,9 @@ class Home extends Component {
             Your browser does not support the video tag.
           </video>
           <div className="splah-text center-align">
-            <h1 className="splash-name">The FarmTable</h1>
+            <h1 className="splash-name">The&nbsp;Farm&nbsp;Table</h1>
             <h4 className="splash-title">
-              Partnering with Farmers to Educate Communities on Where Food Comes From
+              Partnering with Farmers to Educate Communities on Where Food&nbsp;Comes&nbsp;From
             </h4>
           </div>
         </div>
@@ -70,7 +70,7 @@ class Home extends Component {
           <div className="container">
             <div className="row">
 
-              <div className="col s6">
+              <div className="col s6 centered">
                 <a className="waves-effect orange btn-large modal-trigger portal-text z-depth-5" href="#modal1">Host a Tour</a>
                 <div id="modal1" className="modal">
                   <div className="modal-content">
@@ -97,7 +97,7 @@ class Home extends Component {
                   </div>
                 </div>
               </div>
-              <div className="col s6">
+              <div className="col s6 centered">
                 <a className="waves-effect green btn-large modal-trigger portal-text z-depth-5" href="#modal2">Book a Tour</a>
                 <div id="modal2" className="modal">
                   <div className="modal-content">

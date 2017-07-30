@@ -11,10 +11,11 @@
 }
 .splash-name {
   font-family: 'Oswald';
-  font-size: 10em;
+  font-size: 6em;
   color: white;
   text-shadow: 2px 2px 4px #000000;
   margin-left: 50px;
+  text-transform: uppercase;
 }
 .splash-title {
   font-family: 'Bitter';
@@ -30,9 +31,14 @@
   padding: none;
 }
 
+.centered {
+  text-align: center;
+}
+
 .portal {
   background-color: #4e342e;
   padding-bottom: 30px;
+  min-height: 2000px;
 }
 .portal-text {
   margin-top: 20px;
