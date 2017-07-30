@@ -96,7 +96,7 @@ class SetupFarm extends Component {
                 <label htmlFor="">Email Address:</label>
                </div>
                <div className="input-field col s3">
-                 <input value="rach@wondernut.com, CA" id="" type="text" className="validate" />
+                 <input value="rach@wondernut.com" id="" type="text" className="validate" />
                </div>
              </div>
 
