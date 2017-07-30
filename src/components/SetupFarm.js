@@ -176,9 +176,9 @@ class SetupFarm extends Component {
                  <div className="card-action">
                   <div className="row">
                     <div className="col s1" />
-                    <a className="col s2 waves-effect purple lighten-3 btn" onClick={()=>{this.showTour("Orchard")}}>Orchard</a>
+                    <a className="col s2 waves-effect purple lighten-3 btn" onClick={()=>{this.showTour("Orchard")}}>Tour</a>
                     <div className="col s1" />
-                    <a className="col s3 waves-effect pink lighten-2 btn" onClick={()=>{this.showTour("Strawberry")}}>Strawberry</a>
+                    <a className="col s3 waves-effect pink lighten-2 btn" onClick={()=>{this.showTour("Strawberry")}}>Workshop</a>
                     <div className="col s1" />
                     <a className="col s2 waves-effect blue lighten-1 btn" onClick={()=>{this.showTour("Cancel")}}>No Thanks</a>
                     <div className="col s1" />
@@ -186,14 +186,14 @@ class SetupFarm extends Component {
                   <div className="row">
                     <div className="collection col s3">
                       <div className="collection-item col-text deep-purple lighten-3">Orchard Tour</div>
-                      <div className="collection-item col-text deep-purple lighten-3">Take a tour of our lovely orchards, followed by a nice meal.</div>
+                      <div className="collection-item col-text deep-purple lighten-3">Add a tour of your orchards.</div>
                       <div className="collection-item col-text deep-purple lighten-3">Price: $30</div>
                     </div>
                     <div className="col s1" />
                     <div className="collection col s3">
-                      <div href="" className="collection-item col-text pink lighten-3">Strawberry Picking</div>
-                      <div href="" className="collection-item col-text pink lighten-3">Pick strawberries fresh from the field, followed by a nice meal.</div>
-                      <div href="" className="collection-item col-text pink lighten-3">Price: $25</div>
+                      <div href="" className="collection-item col-text pink lighten-3">Produce Workshop</div>
+                      <div href="" className="collection-item col-text pink lighten-3">Add a Field Tour and Workshop.</div>
+                      <div href="" className="collection-item col-text pink lighten-3">Price: $65</div>
                     </div>
 
                   </div>
@@ -210,17 +210,14 @@ class SetupFarm extends Component {
            <div className="col s2" />
            <div className="col s8">
 
-                 <div className="card pink lighten-3 main-tour">
+                 <div className="card lighten-3 main-tour">
                    <div className="card-content white-text">
-                     <span className="card-title red accent-2">Strawberry Tour - Wondernut Farm</span>
-                     <p className="">Organic Fruit and Vegetable Farm & Pickling Workshop.</p>
-                     <p className="">Description: Come walk our fields and learn how we turn our 2nds and end of season crops into treats to last all winter! All supplies and produce provided.</p>
+                     <span className="card-title"><input type="text" value="Suggested Title: Produce Workshop - Wondernut Farm" className="suggested-tour"/></span>
+                     <textarea className="suggested-desc">Description: Come walk our fields and learn how we turn our 2nds and end of season crops into treats to last all winter! All supplies and produce provided.</textarea>
                    </div>
                    <div className="card-action">
-                    <div>PRICE:  $65</div>
-                    <div className="teal accent-3">FEATURES:  Vegetables, Fruit</div>
-                    <div className="yellow lighten-1">REVIEW: 5 STARS - Great for picky eaters to get a new perspective on vegetables!</div>
-                    <div className="green lighten-1">Groveland, CA </div>
+                    <div>SUGGESTED PRICE:  $65</div>
+                    <div className="">Groveland, CA </div>
                    </div>
                  </div>
 

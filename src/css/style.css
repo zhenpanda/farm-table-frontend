@@ -180,4 +180,16 @@
 }
 .main-tour{
   margin-bottom: 200px;
+  background: white;
+  border: 2px solid black;
+  color: #006064;
+}
+
+.suggested-tour {
+  font-size: 1em !important;
+  color: #006064;
+}
+
+.suggested-desc {
+  color: #006064;
 }
