@@ -27,7 +27,6 @@ class Farm extends Component {
   render() {
     return (
       <div>
-        <div className="farm-header z-depth-3 orange lighten-4"></div>
         <div className="farm">
           <div className="parallax-container">
             <div className="parallax">
@@ -137,7 +136,6 @@ class Farm extends Component {
                 HOST A TOUR
               </a>
             </Link>
-            <p className="host-text">START THE TOUR APPLICATION</p>
            </div>
           <div className="col s3" />
         </div>

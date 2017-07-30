@@ -89,12 +89,6 @@ class Home extends Component {
                       <input value="passwordfakker" id="password" type="password" className="validate" />
                     </div>
                   </div>
-                  <div className="row">
-                  <label htmlFor="password" className="label-text">Repeat Psw:</label>
-                    <div className="input-field col s8">
-                      <input value="passwordfakker" id="password" type="password" className="validate" />
-                    </div>
-                  </div>
                   <div className="modal-footer">
                     <Link to="farm">
                       <a className="modal-action modal-close waves-effect waves-green btn-flat">Submit</a>

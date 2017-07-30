@@ -121,7 +121,7 @@ class SetupFarm extends Component {
                     <input type="file" />
                   </div>
                   <div className="file-path-wrapper col s4">
-                    <input className="file-path validate" type="text" value="/Documents/picuterOfMyFarm.jpg"/>
+                    <input className="file-path validate" type="text" value="/Documents/pictureOfMyFarm.jpg"/>
                   </div>
                 </div>
                 <div className="col s6">
@@ -1266,7 +1266,6 @@ class SetupFarm extends Component {
                   COMPLETE APPLICATION
                 </div>
               </Link>
-              <p className="complete-text">REVIEW YOUR FARM</p>
              </div>
             <div className="col s4" />
           </div>
