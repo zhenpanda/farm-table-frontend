@@ -20,6 +20,7 @@ class Farm extends Component {
     console.log("loading jquery component....");
     $(document).ready(function(){
       $('.parallax').parallax();
+      $(window).scrollTop(0);
     });
   }
 

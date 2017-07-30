@@ -14,7 +14,7 @@
   margin-top: 100px;
 }
 .splash-name {
-  font-family: 'MyFont';
+  /*font-family: 'MyFont';*/
   font-size: 10em;
   color: white;
   text-shadow: 2px 2px 4px #000000;
@@ -119,7 +119,38 @@
   font-size: 16px;
 }
 .support-text{
-  opacity: .45;
+  opacity: .25;
 }
-.my-farm{
+.third-form{
+  margin-top: -30px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: white;
+}
+.details-header-text {
+  color: #006064;
+}
+.vegetables-title {
+  color: white;
+  font-size: 18px;
+}
+.vegetables-text {
+  color: white;
+}
+.setup-farm{
+  height: 2000px;
+}
+.animals-title{
+  padding-top: 14px;
+  color: white;
+  font-size: 18px;
+}
+.animals-label{
+  font-size: 16px;
+  color: #ffe0b2;
+}
+.seasons-title{
+  padding-top: 18px;
+  color: #006064;
+  font-size: 20px;
 }
