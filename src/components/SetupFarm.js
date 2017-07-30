@@ -13,12 +13,12 @@ require('materialize-css/dist/js/materialize.js');
 require('materialize-css/js/init.js');
 
 class SetupFarm extends Component {
-
   componentDidMount() {
     console.log("loading jquery component....");
     $(document).ready(function() {
       $(window).scrollTop(0);
       $( "#machine-learning-area" ).hide();
+      $( "#tour-area" ).hide();
 
       $('.datepicker').pickadate({
         selectMonths: true, // Creates a dropdown to control month
@@ -33,7 +33,9 @@ class SetupFarm extends Component {
           var top = this.scrollY,
               left =this.scrollX;
           // console.log(top);
-          if (top >= 620) {
+          // tour-area
+          let tour = $("#tour-area").is(":visible");
+          if (top >= 620 && !tour) {
             $( "#machine-learning-area" ).show("slow", function() {
               console.log("Okay popup starts here....");
             });
@@ -41,6 +43,13 @@ class SetupFarm extends Component {
       }, false);
 
     });
+  }
+  showTour(inputStr) {
+    // alert("Showing suggested tour..." + inputStr);
+    $( "#machine-learning-area" ).hide("slow", function() {
+      console.log("Okay popup starts here....");
+    });
+    $( "#tour-area" ).show("slow", function() {});
   }
 
   render() {
@@ -167,24 +176,24 @@ class SetupFarm extends Component {
                  <div className="card-action">
                   <div className="row">
                     <div className="col s1" />
-                    <a className="col s2 waves-effect purple lighten-3 btn">Orchard</a>
+                    <a className="col s2 waves-effect purple lighten-3 btn" onClick={()=>{this.showTour("Orchard")}}>Orchard</a>
                     <div className="col s1" />
-                    <a className="col s3 waves-effect pink lighten-2 btn">Strawberry</a>
+                    <a className="col s3 waves-effect pink lighten-2 btn" onClick={()=>{this.showTour("Strawberry")}}>Strawberry</a>
                     <div className="col s1" />
-                    <a className="col s2 waves-effect blue lighten-1 btn">No Thanks</a>
+                    <a className="col s2 waves-effect blue lighten-1 btn" onClick={()=>{this.showTour("Cancel")}}>No Thanks</a>
                     <div className="col s1" />
                   </div>
                   <div className="row">
                     <div className="collection col s3">
-                      <div href="" className="collection-item col-text">Orchard Tour</div>
-                      <div href="" className="collection-item col-text">Take a tour of our lovely orchards, followed by a nice meal.</div>
-                      <div href="" className="collection-item col-text">Price: $30</div>
+                      <div className="collection-item col-text deep-purple lighten-3">Orchard Tour</div>
+                      <div className="collection-item col-text deep-purple lighten-3">Take a tour of our lovely orchards, followed by a nice meal.</div>
+                      <div className="collection-item col-text deep-purple lighten-3">Price: $30</div>
                     </div>
                     <div className="col s1" />
                     <div className="collection col s3">
-                      <div href="" className="collection-item col-text">Orchard Tour</div>
-                      <div href="" className="collection-item col-text">Take a tour of our lovely orchards, followed by a nice meal.</div>
-                      <div href="" className="collection-item col-text">Price: $30</div>
+                      <div href="" className="collection-item col-text pink lighten-3">Strawberry Picking</div>
+                      <div href="" className="collection-item col-text pink lighten-3">Pick strawberries fresh from the field, followed by a nice meal.</div>
+                      <div href="" className="collection-item col-text pink lighten-3">Price: $25</div>
                     </div>
 
                   </div>
@@ -195,6 +204,28 @@ class SetupFarm extends Component {
 
            </div>
            <div className="col s2" />
+        </div>
+
+        <div className="row" id="tour-area">
+           <div className="col s2" />
+           <div className="col s8">
+
+                 <div className="card pink lighten-3 main-tour">
+                   <div className="card-content white-text">
+                     <span className="card-title red accent-2">Strawberry Tour - Wondernut Farm</span>
+                     <p className="">Organic Fruit and Vegetable Farm & Pickling Workshop.</p>
+                     <p className="">Description: Come walk our fields and learn how we turn our 2nds and end of season crops into treats to last all winter! All supplies and produce provided.</p>
+                   </div>
+                   <div className="card-action">
+                    <div>PRICE:  $65</div>
+                    <div className="teal accent-3">FEATURES:  Vegetables, Fruit</div>
+                    <div className="yellow lighten-1">REVIEW: 5 STARS - Great for picky eaters to get a new perspective on vegetables!</div>
+                    <div className="green lighten-1">Groveland, CA </div>
+                   </div>
+                 </div>
+
+          <div className="col s2" />
+           </div>
         </div>
 
         <div className="row third-form">

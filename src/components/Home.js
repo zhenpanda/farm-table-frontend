@@ -14,6 +14,7 @@ class Home extends Component {
   componentDidMount() {
     console.log("loading jquery component....");
     $(document).ready(function(){
+      $(window).scrollTop(0);
       $('#modal1').modal({
           dismissible: true, // Modal can be dismissed by clicking outside of the modal
           opacity: .5, // Opacity of modal background

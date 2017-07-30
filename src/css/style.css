@@ -172,8 +172,12 @@
 }
 
 #machine-learning-area {
-  height: 300px;
+  height: 650px;
 }
 .col-text {
   font-size: .75em;
+  color: white;
+}
+.main-tour{
+  margin-bottom: 200px;
 }
