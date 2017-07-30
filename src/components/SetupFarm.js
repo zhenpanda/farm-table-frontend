@@ -1209,6 +1209,29 @@ class SetupFarm extends Component {
           </div>
         </div>
 
+        <div className="row">
+          <div className="col s4" />
+           <div className="col s4">
+           ...Machine Learning Questions Pop Up Here....
+          </div>
+          <div className="col s4" />
+        </div>
+
+        <div>
+          <div className="row">
+            <div className="col s4" />
+             <div className="col s4">
+              <Link to="summary">
+                <div className="waves-effect orange darken-4 btn-large complete-btn">
+                  COMPLETE APPLICATION
+                </div>
+              </Link>
+              <p className="complete-text">REVIEW YOUR FARM</p>
+             </div>
+            <div className="col s4" />
+          </div>
+        </div>
+
       </div>
     )
   }
