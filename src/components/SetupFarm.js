@@ -18,6 +18,7 @@ class SetupFarm extends Component {
     console.log("loading jquery component....");
     $(document).ready(function() {
       $(window).scrollTop(0);
+      $( "#machine-learning-area" ).hide();
 
       $('.datepicker').pickadate({
         selectMonths: true, // Creates a dropdown to control month
@@ -31,9 +32,11 @@ class SetupFarm extends Component {
       window.addEventListener("scroll", function(event) {
           var top = this.scrollY,
               left =this.scrollX;
-          console.log(top);
-          if (top >= 1225 && true) {
-            console.log("Okay popup here....")
+          // console.log(top);
+          if (top >= 620) {
+            $( "#machine-learning-area" ).show("slow", function() {
+              console.log("Okay popup starts here....");
+            });
           }
       }, false);
 
@@ -132,8 +135,70 @@ class SetupFarm extends Component {
 
           </div>
 
+        <div className="row third-form pick-dates">
+          <div className="col s12">
+            <div className="row">
+            <div className="col s1" />
+              <div className="col s4 card green lighten-2">
+                <div className="seasons-title">Pick Season Start Date</div>
+                <input type="text" className="datepicker" />
+              </div>
+              <div className="col s1" />
+              <div className="col s4 card orange">
+                <div className="seasons-title">Pick Season End Date</div>
+                <input type="text" className="datepicker" />
+              </div>
+              <div className="col s1" />
+            </div>
+          </div>
+        </div>
+
+        <div className="row">
+           <div className="col s12" id="machine-learning-area">
+
+           <div className="row">
+            <div className="col s2" />
+            <div className="col s8">
+             <div className="card teal lighten-2">
+               <div className="card-content white-text">
+                 <span className="card-title">Add a Fruit Tour?</span>
+                 <p>It looks like there are a lot of fruit growers in your area. Are you one of them?</p>
+                 </div>
+                 <div className="card-action">
+                  <div className="row">
+                    <div className="col s1" />
+                    <a className="col s2 waves-effect purple lighten-3 btn">Orchard</a>
+                    <div className="col s1" />
+                    <a className="col s3 waves-effect pink lighten-2 btn">Strawberry</a>
+                    <div className="col s1" />
+                    <a className="col s2 waves-effect blue lighten-1 btn">No Thanks</a>
+                    <div className="col s1" />
+                  </div>
+                  <div className="row">
+                    <div className="collection col s3">
+                      <div href="" className="collection-item col-text">Orchard Tour</div>
+                      <div href="" className="collection-item col-text">Take a tour of our lovely orchards, followed by a nice meal.</div>
+                      <div href="" className="collection-item col-text">Price: $30</div>
+                    </div>
+                    <div className="col s1" />
+                    <div className="collection col s3">
+                      <div href="" className="collection-item col-text">Orchard Tour</div>
+                      <div href="" className="collection-item col-text">Take a tour of our lovely orchards, followed by a nice meal.</div>
+                      <div href="" className="collection-item col-text">Price: $30</div>
+                    </div>
+
+                  </div>
+                 </div>
+               </div>
+              </div>
+            </div>
+
+           </div>
+           <div className="col s2" />
+        </div>
+
         <div className="row third-form">
-          <h6 className="details-header-text">WHAT DO YOU FARM? CHECK ALL THAT APPLY</h6>
+        <h6 className="details-header-text center-align">ADD MORE TO YOUR TOUR! CHECK ALL THAT APPLY</h6>
           <ul className="collapsible" data-collapsible="accordion">
               <li>
                 <div className="collapsible-header green lighten-2">Vegetables<p className="expander"><i className="fa fa-caret-down" aria-hidden="true"></i></p></div>
@@ -1209,59 +1274,11 @@ class SetupFarm extends Component {
             </ul>
         </div>
 
-        <div className="row third-form pick-dates">
-          <div className="col s12 card light-blue lighten-3">
-            <div className="row">
-            <div className="col s1" />
-              <div className="col s4">
-                <div className="seasons-title">Pick Season Start Date</div>
-                <input type="text" className="datepicker" />
-              </div>
-              <div className="col s1" />
-              <div className="col s4">
-                <div className="seasons-title">Pick Season End Date</div>
-                <input type="text" className="datepicker" />
-              </div>
-              <div className="col s1" />
-            </div>
-          </div>
-        </div>
-
-        <div className="row">
-           <div className="col s12" id="machine-learning-area">
-
-           <div className="row">
-            <div className="col s2" />
-            <div className="col s8">
-             <div className="card teal lighten-2">
-               <div className="card-content white-text">
-                 <span className="card-title">Add a Fruit Tour?</span>
-                 <p>It looks like there are a lot of fruit growers in your area. Are you one of them?</p>
-                 </div>
-                 <div className="card-action">
-                  <div className="row">
-                    <a className="col s2 waves-effect amber darken-1 btn">button</a>
-                    <div className="col s1" />
-                    <a className="col s2 waves-effect amber darken-1 btn">button</a>
-                    <div className="col s1" />
-                    <a className="col s2 waves-effect amber darken-1 btn">button</a>
-                    <div className="col s1" />
-                    <a className="col s2 waves-effect amber darken-1 btn">button</a>
-                  </div>
-                 </div>
-               </div>
-              </div>
-            </div>
-
-           </div>
-           <div className="col s2" />
-        </div>
-
         <div>
           <div className="row">
             <div className="col s4" />
              <div className="col s4">
-              <Link to="summary">
+              <Link to="/">
                 <div className="waves-effect orange darken-4 btn-large complete-btn">
                   COMPLETE APPLICATION
                 </div>

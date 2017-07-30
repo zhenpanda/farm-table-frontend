@@ -129,6 +129,7 @@
 }
 .details-header-text {
   color: #006064;
+  width: 900px;
 }
 .vegetables-title {
   color: white;
@@ -166,4 +167,7 @@
 
 #machine-learning-area {
   height: 300px;
+}
+.col-text {
+  font-size: .75em;
 }
