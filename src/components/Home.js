@@ -57,7 +57,6 @@ class Home extends Component {
 
               <div className="col s6">
                 <a className="waves-effect orange btn-large modal-trigger portal-text z-depth-5" href="#modal1">Host a Tour</a>
-                <h6 className="host-details">Click above to host a tour or event.</h6>
                 <div id="modal1" className="modal">
                   <div className="modal-content">
                   <div className="row">
@@ -85,7 +84,6 @@ class Home extends Component {
               </div>
               <div className="col s6">
                 <a className="waves-effect green btn-large modal-trigger portal-text z-depth-5" href="#modal2">Book a Tour</a>
-                <h6 className="tour-details">Click above to schedule a farm tour or event.</h6>
                 <div id="modal2" className="modal">
                   <div className="modal-content">
 
