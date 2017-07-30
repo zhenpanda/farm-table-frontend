@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import farmland from '../assets/farmland_small.mp4';
+import farmland from '../assets/farmland_short.mp4';
 import {Link} from 'react-router';
 import '../css/style.css';
 
@@ -14,7 +14,7 @@ class Home extends Component {
   componentDidMount() {
     console.log("loading jquery component....");
     $(document).ready(function(){
-      $('.modal1').modal({
+      $('#modal1').modal({
           dismissible: true, // Modal can be dismissed by clicking outside of the modal
           opacity: .5, // Opacity of modal background
           inDuration: 300, // Transition in duration
@@ -30,7 +30,6 @@ class Home extends Component {
         }
       );
     });
-
   }
   // if App gets passed any children render it
   render() {
@@ -57,31 +56,42 @@ class Home extends Component {
             <div className="row">
 
               <div className="col s6">
-                <a className="waves-effect green btn-large modal-trigger portal-text z-depth-5" href="#modal1">Book a Tour</a>
-                <h6 className="tour-details">Click above to schedule a farm tour or event.</h6>
-                <div id="modal1" className="modal">
-                  <div className="modal-content">
-                    <h4>Visitors Log In</h4>
-                    <p>Log In Inputs</p>
-                  </div>
-                  <div className="modal-footer">
-                    <a href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">Sumbit</a>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col s6">
                 <a className="waves-effect orange btn-large modal-trigger portal-text z-depth-5" href="#modal1">Host a Tour</a>
                 <h6 className="host-details">Click above to host a tour or event.</h6>
                 <div id="modal1" className="modal">
                   <div className="modal-content">
-                    <h4>Visitors Log In</h4>
-                    <p>LogIn Inputs</p>
+                  <div className="row">
+                    <h4 className="card blue-grey lighten-1 col s6 card-content white-text">Farmers Log In</h4>
+                  </div>
+                  <div className="row">
+                  <label htmlFor="farm-name" className="label-text">Farm Name:</label>
+                    <div className="input-field col s8">
+                      <input value="WonderNutFarm" id="farm-name" type="text" className="validate" />
+                    </div>
+                  </div>
+                  <div className="row">
+                  <label htmlFor="password" className="label-text">Password:</label>
+                    <div className="input-field col s8">
+                      <input value="passwordfakker" id="password" type="password" className="validate" />
+                    </div>
+                  </div>
                   </div>
                   <div className="modal-footer">
-                    <Link to="resources">
+                    <Link to="farm">
                       <a className="modal-action modal-close waves-effect waves-green btn-flat">Sumbit</a>
                     </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="col s6">
+                <a className="waves-effect green btn-large modal-trigger portal-text z-depth-5" href="#modal2">Book a Tour</a>
+                <h6 className="tour-details">Click above to schedule a farm tour or event.</h6>
+                <div id="modal2" className="modal">
+                  <div className="modal-content">
+
+                  </div>
+                  <div className="modal-footer">
+                    <a href="" className="modal-action modal-close waves-effect waves-green btn-flat">Sumbit</a>
                   </div>
                 </div>
               </div>

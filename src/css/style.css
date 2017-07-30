@@ -50,3 +50,44 @@
   margin-top: 20px;
   color: #ffb300;
 }
+.label-text {
+  float: left;
+}
+
+.farm-header{
+  height: 25px;
+  width: 100%;
+  z-index: 99;
+  background-color: white;
+  position: relative;
+}
+.farm{
+  z-index: 9;
+}
+.field-text {
+  margin-top: 260px;
+  color: white;
+  font-family: GillSans;
+}
+.bullets{
+  color: #2e7d32;
+  /*background-color: #2e7d32;*/
+  font-size: 1.1em;
+}
+.bullets-icon{
+  margin-left: 10px;
+  margin-right: 14px;
+}
+.example-tour-top-text {
+  margin-right: 10px;
+}
+.example-tour-text{
+  padding-left: 120px;
+}
+.example-tour-bot-text{
+  margin-right: 10px;
+}
+.host-btn {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

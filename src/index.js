@@ -16,7 +16,8 @@ import ReuiredAuth from './components/Require_authentication'
 // basic components
 import App from './components/App';
 import Home from './components/Home';
-import Resources from './components/Resources';
+import Farm from './components/Farm';
+
 // import Async from './middlewares/async'
 
 // reducers
@@ -32,7 +33,7 @@ ReactDOM.render(
     <Router history={browserHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Home} />
-      <Route path="resources" component={Resources} />
+      <Route path="farm" component={Farm} />
     </Route>
   </Router>
   </Provider>
