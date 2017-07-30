@@ -59,9 +59,9 @@ class Home extends Component {
             Your browser does not support the video tag.
           </video>
           <div className="splah-text center-align">
-            <h1 className="splash-name">The FarmTable</h1>
+            <h1 className="splash-name">The&nbsp;Farm&nbsp;Table</h1>
             <h4 className="splash-title">
-              Partnering with Farmers to Educate Communities on Where Food Comes From
+              Partnering with Farmers to Educate Communities on Where Food&nbsp;Comes&nbsp;From
             </h4>
           </div>
         </div>
@@ -70,9 +70,8 @@ class Home extends Component {
           <div className="container">
             <div className="row">
 
-              <div className="col s6">
+              <div className="col s6 centered">
                 <a className="waves-effect orange btn-large modal-trigger portal-text z-depth-5" href="#modal1">Host a Tour</a>
-                <h6 className="host-details">Click above to host a tour or event.</h6>
                 <div id="modal1" className="modal">
                   <div className="modal-content">
                   <div className="row">
@@ -90,23 +89,16 @@ class Home extends Component {
                       <input value="passwordfakker" id="password" type="password" className="validate" />
                     </div>
                   </div>
-                  <div className="row">
-                  <label htmlFor="password" className="label-text">Repeat Psw:</label>
-                    <div className="input-field col s8">
-                      <input value="passwordfakker" id="password" type="password" className="validate" />
-                    </div>
-                  </div>
                   <div className="modal-footer">
-                  <Link to="farm">
-                  <a className="modal-action modal-close waves-effect waves-green btn-flat">Sumbit</a>
-                  </Link>
+                    <Link to="farm">
+                      <a className="modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
+                    </Link>
                   </div>
                   </div>
                 </div>
               </div>
-              <div className="col s6">
+              <div className="col s6 centered">
                 <a className="waves-effect green btn-large modal-trigger portal-text z-depth-5" href="#modal2">Book a Tour</a>
-                <h6 className="tour-details">Click above to schedule a farm tour or event.</h6>
                 <div id="modal2" className="modal">
                   <div className="modal-content">
                     <div className="row">

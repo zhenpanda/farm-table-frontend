@@ -27,7 +27,6 @@ class Farm extends Component {
   render() {
     return (
       <div>
-        <div className="farm-header z-depth-3 orange lighten-4"></div>
         <div className="farm">
           <div className="parallax-container">
             <div className="parallax">
@@ -41,7 +40,7 @@ class Farm extends Component {
               <div className="collection">
                 <a className="collection-item">
                   <p className="bullets"><i className="fa fa-leaf bullets-icon" aria-hidden="true"></i>
-                  Do you love what you do and want to share this your community?
+                  Do you love what you do and want to share this with your community?
                   </p>
                 </a>
                 <a className="collection-item">
@@ -83,44 +82,6 @@ class Farm extends Component {
          <div className="col s2" />
        </div>
 
-       <div className="row">
-        <div className="col s2" />
-         <div className="col s8 center-align">
-           <table>
-             <thead>
-               <tr>
-                   <th>Example Tour Details</th>
-                   <th></th>
-                   <th></th>
-               </tr>
-             </thead>
-             <tbody>
-               <tr>
-                 <td><i className="fa fa-circle example-tour-top-text" aria-hidden="true"></i>Average Tour Size: 4 people</td>
-               </tr>
-               <tr>
-                 <td><i className="fa fa-circle example-tour-top-text" aria-hidden="true"></i>Average Tour Cost per person: $85</td>
-               </tr>
-               <tr>
-                <td><i className="fa fa-circle example-tour-top-text" aria-hidden="true"></i>Schedule Concept:</td>
-               </tr>
-               <tr>
-                <td className="example-tour-text"><i className="fa fa-caret-right example-tour-bot-text" aria-hidden="true"></i>Meet & Greet: 15 - 30 minutes</td>
-               </tr>
-               <tr>
-                <td className="example-tour-text"><i className="fa fa-caret-right example-tour-bot-text" aria-hidden="true"></i>Tour / Pick / Pet: 60 -  90 minutes</td>
-               </tr>
-               <tr>
-                <td className="example-tour-text"><i className="fa fa-caret-right example-tour-bot-text" aria-hidden="true"></i>Enjoy a Meal: 60 - 90 minutes</td>
-               </tr>
-               <tr>
-                <td className="example-tour-text"><i className="fa fa-caret-right example-tour-bot-text" aria-hidden="true"></i>Total Time: 2hrs 15 minutes - 3hrs 30 minutes</td>
-               </tr>
-             </tbody>
-           </table>
-          </div>
-          <div className="col s2" />
-        </div>
 
         <div className="parallax-container">
           <div className="parallax">
@@ -137,7 +98,6 @@ class Farm extends Component {
                 HOST A TOUR
               </a>
             </Link>
-            <p className="host-text">START THE TOUR APPLICATION</p>
            </div>
           <div className="col s3" />
         </div>
