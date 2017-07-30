@@ -14,7 +14,7 @@
   font-size: 10em;
   color: white;
   text-shadow: 2px 2px 4px #000000;
-  margin-left: 100px;
+  margin-left: 50px;
 }
 .splash-title {
   font-family: 'Bitter';
@@ -84,6 +84,82 @@
   margin-right: 10px;
 }
 .host-btn {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 35px;
+}
+.host-text{
+  margin-left: -24px;
+}
+
+.setup-farm {
+  /*background-color: #efebe9;*/
+}
+.setup-farm-header-text{
+  margin-left: 28px;
+  color: #ffa726;
+}
+.big-form {
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: white;
+}
+.second-form {
+  margin-top: -30px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: white;
+}
+.second-form-header {
+  margin-top: 16px;
+}
+.text-area-title {
+  font-size: 16px;
+}
+.support-text{
+  opacity: .25;
+}
+.third-form{
+  margin-top: -30px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: white;
+}
+.details-header-text {
+  color: #006064;
+}
+.vegetables-title {
+  color: white;
+  font-size: 18px;
+}
+.vegetables-text {
+  color: white;
+}
+.setup-farm{
+  height: 2000px;
+}
+.animals-title{
+  padding-top: 14px;
+  color: white;
+  font-size: 18px;
+}
+.animals-label{
+  font-size: 16px;
+  color: #ffe0b2;
+}
+.seasons-title{
+  padding-top: 18px;
+  color: #006064;
+  font-size: 20px;
+}
+.complete-btn {
+  margin-left: 44px;
+}
+.complete-text{
+  margin-left: 88px;
+}
+.expander{
+  float: right;
+}
+
+#machine-learning-area {
+  height: 300px;
 }

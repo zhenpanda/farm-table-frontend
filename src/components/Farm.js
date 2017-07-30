@@ -6,7 +6,7 @@ import '../../node_modules/font-awesome/css/font-awesome.min.css';
 
 import field from '../assets/farmFieldImg.png';
 import tracker from '../assets/tracker.png';
-import cow from '../assets/cow.png';
+import botFarm from '../assets/botFarm.jpeg';
 
 import $ from 'jquery';
 require('materialize-css/dist/css/materialize.css');
@@ -20,6 +20,7 @@ class Farm extends Component {
     console.log("loading jquery component....");
     $(document).ready(function(){
       $('.parallax').parallax();
+      $(window).scrollTop(0);
     });
   }
 
@@ -121,24 +122,29 @@ class Farm extends Component {
           <div className="col s2" />
         </div>
 
+        <div className="parallax-container">
+          <div className="parallax">
+            <img src={botFarm} />
+          </div>
+        </div>
+
+        <div></div>
         <div className="row">
           <div className="col s5" />
            <div className="col s4">
-            <a className="waves-effect orange darken-4 btn-large host-btn">
-            HOST A TOUR
-            </a>
+            <Link to="setupFarm">
+              <a className="waves-effect orange darken-4 btn-large host-btn">
+                HOST A TOUR
+              </a>
+            </Link>
+            <p className="host-text">START THE TOUR APPLICATION</p>
            </div>
           <div className="col s3" />
-        </div>
-
-        <div className="parallax-container">
-          <div className="parallax">
-            <img src={cow} />
-          </div>
         </div>
 
       </div>
     );
   }
 }
+
 export default Farm;

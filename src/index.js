@@ -17,6 +17,9 @@ import ReuiredAuth from './components/Require_authentication'
 import App from './components/App';
 import Home from './components/Home';
 import Farm from './components/Farm';
+import SetupFarm from './components/SetupFarm';
+import Summary from './components/Summary';
+import Visitor from './components/Visitor';
 
 // import Async from './middlewares/async'
 
@@ -34,6 +37,9 @@ ReactDOM.render(
     <Route path="/" component={App}>
       <IndexRoute component={Home} />
       <Route path="farm" component={Farm} />
+      <Route path="setupFarm" component={SetupFarm} />
+      <Route path="summary" component={Summary} />
+      <Route path="visitor" component={Visitor} />
     </Route>
   </Router>
   </Provider>

@@ -29,6 +29,21 @@ class Home extends Component {
           }
         }
       );
+      $('#modal2').modal({
+          dismissible: true, // Modal can be dismissed by clicking outside of the modal
+          opacity: .5, // Opacity of modal background
+          inDuration: 300, // Transition in duration
+          outDuration: 200, // Transition out duration
+          startingTop: '4%', // Starting top style attribute
+          endingTop: '10%', // Ending top style attribute
+          ready: function(modal, trigger) {
+            console.log(modal, trigger);
+          },
+          complete: function() {
+            console.log('Closed');
+          }
+        }
+      );
     });
   }
   // if App gets passed any children render it
@@ -44,7 +59,7 @@ class Home extends Component {
             Your browser does not support the video tag.
           </video>
           <div className="splah-text center-align">
-            <h1 className="splash-name">FarmTable</h1>
+            <h1 className="splash-name">The FarmTable</h1>
             <h4 className="splash-title">
               Partnering with Farmers to Educate Communities on Where Food Comes From
             </h4>
@@ -60,7 +75,7 @@ class Home extends Component {
                 <div id="modal1" className="modal">
                   <div className="modal-content">
                   <div className="row">
-                    <h4 className="card blue-grey lighten-1 col s6 card-content white-text">Farmers Log In</h4>
+                    <h4 className="card blue-grey lighten-1 col s6 card-content white-text">Farmers Sign Up</h4>
                   </div>
                   <div className="row">
                   <label htmlFor="farm-name" className="label-text">Farm Name:</label>
@@ -74,11 +89,17 @@ class Home extends Component {
                       <input value="passwordfakker" id="password" type="password" className="validate" />
                     </div>
                   </div>
+                  <div className="row">
+                  <label htmlFor="password" className="label-text">Repeat Psw:</label>
+                    <div className="input-field col s8">
+                      <input value="passwordfakker" id="password" type="password" className="validate" />
+                    </div>
                   </div>
                   <div className="modal-footer">
                     <Link to="farm">
                       <a className="modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
                     </Link>
+                  </div>
                   </div>
                 </div>
               </div>
@@ -86,10 +107,12 @@ class Home extends Component {
                 <a className="waves-effect green btn-large modal-trigger portal-text z-depth-5" href="#modal2">Book a Tour</a>
                 <div id="modal2" className="modal">
                   <div className="modal-content">
-
+                    <div className="row">
+                      <h4 className="card blue-grey lighten-1 col s6 card-content white-text">Coming Soon!</h4>
+                    </div>
                   </div>
                   <div className="modal-footer">
-                    <a href="" className="modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
+                    <a href="" className="modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
                   </div>
                 </div>
               </div>
