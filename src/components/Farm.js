@@ -40,7 +40,7 @@ class Farm extends Component {
               <div className="collection">
                 <a className="collection-item">
                   <p className="bullets"><i className="fa fa-leaf bullets-icon" aria-hidden="true"></i>
-                  Do you love what you do and want to share this your community?
+                  Do you love what you do and want to share this with your community?
                   </p>
                 </a>
                 <a className="collection-item">
